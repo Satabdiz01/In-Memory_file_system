@@ -1,8 +1,12 @@
-# In-Memory_file_system 
+
+<h1 align='center'> In-Memory File System </h1>
+<p align='center'>
+<img src='http://ForTheBadge.com/images/badges/built-with-love.svg'>
+</p>
 
 ### Built by: Satabdi Beuria, Final year, NIT Rourkela
 
-# Welcome to the Project
+## About the Project ⛹️‍♂️
 
 This project implements a basic in-memory file system in Python. It simulates fundamental file system functionalities, utilizing objects to represent the file system structure and supporting operations like creating directories, files, moving, copying, and deleting.
 
@@ -35,7 +39,7 @@ This project implements a basic in-memory file system in Python. It simulates fu
 - **Composite Design Pattern** has been used here where we can treat the whole collection of objects the same way you would treat any of the individual objects in the collection.
 - It uses **objects** for efficiency and simplicity in representing directories and files.
 
-![Flowchart Illustrating the File System Design](https://miro.medium.com/v2/resize:fit:722/1*omT9rBM02S1Em3xx-caM4Q.png)
+![Flowchart Illustrating the File System Design](https://miro.medium.com/v2/resize:fit:828/format:webp/1*Urt2Xs4OwqJYxRx1CecKkQ.png)
 
 ## Setup Instructions:
 Setup Instructions for Running a Python Script on Windows:
