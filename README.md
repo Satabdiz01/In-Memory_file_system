@@ -15,9 +15,9 @@ This project implements a basic in-memory file system in Python, providing funda
 ## Implementation Details
 
 ### File System Structure (Data Structure):
-- The primary data structure is an object (`fs`) representing the file system. It is organized as a hierarchical structure with directories and files.
-- Each directory is represented by an object with a `type` property set to 'dir' and a `content` property containing nested files and directories or, an object with keys as file/directory names and values as objects containing type and content information.
-- Files are represented similarly but with a `type` property set to 'file' and a `content` property containing the file's data.
+- The core data structure is a Python dictionary (fs) representing the file system. It employs a hierarchical structure with directories and files, utilizing keys for names and values for nested objects.
+- Each directory is denoted by a dictionary with a 'type' property set to 'dir' and a 'content' property containing nested files and directories.
+- Files are similarly represented with a 'type' property set to 'file' and a 'content' property containing the file's data.
 
 ### File System Operations:
 - `mkdir`: Creates a new directory.
