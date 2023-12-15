@@ -87,21 +87,3 @@ Setup Instructions for Running a Python Script on Windows:
    To exit the script, type `exit` and press Enter. This will close the Python script.
 
 **Note:** Ensure that Python is added to your system's PATH during installation to run commands like `python` and `pip` directly from the Command Prompt.
-
-
-### Time Complexity Analysis
-
-1. **Insertions/Deletions:**
-    - **Time Complexity:** O(1)
-    - **Explanation:** Adding or removing an item from a Python dictionary typically has constant time complexity, as it involves hash table operations.
-
-2. **Path Manipulation:**
-    - **Time Complexity:** O(N), where N is the length of the path being manipulated.
-    - **Explanation:** Path manipulation operations involve string concatenation and regular expressions, where the time complexity depends on the length of the paths being manipulated.
-      
-3. **Command Processing:**
-    - **Time Complexity:** O(1) to O(N), depending on the specific operation and it can be O(log N) if we implement Binary Search.
-    - **Explanation:** Most operations involve dictionary lookups or manipulations, which are typically O(1). However, operations like listing directory contents may take O(N) time, where N is the size of the specific directory or file involved.
-   
-**Overall:**
-The implementation demonstrates efficient time complexity for common file system operations, ensuring effective performance for typical use cases.
