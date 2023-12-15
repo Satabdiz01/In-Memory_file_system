@@ -4,11 +4,13 @@
 <img src='http://ForTheBadge.com/images/badges/built-with-love.svg'>
 </p>
 
+[![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
 ### Built by: Satabdi Beuria, Final year, NIT Rourkela
 
-## About the Project ⛹️‍♂️
+## Overview
 
-This project implements a basic in-memory file system in Python. It simulates fundamental file system functionalities, utilizing objects to represent the file system structure and supporting operations like creating directories, files, moving, copying, and deleting.
+This project implements a basic in-memory file system in Python, providing fundamental file system functionalities. It simulates directory structures and supports operations like creating directories, and files, moving, copying, and deleting.
 
 ## Implementation Details
 
@@ -31,13 +33,12 @@ This project implements a basic in-memory file system in Python. It simulates fu
 - `mv`: Moves a file or directory to another location.
 - `cp`: Copies a file or directory to another location.
 - `rm`: Removes a file or directory.
-- **`pwd`: Prints the full name (the full path) of the current/working directory (EXTRA FUNCTIONALITY ADDED)**
 
 ### Design Decisions:
 
 - This code focuses on providing a basic understanding of file system operations in a **Python** environment.
-- **Composite Design Pattern** has been used here where we can treat the whole collection of objects the same way you would treat any of the individual objects in the collection.
-- It uses **objects** for efficiency and simplicity in representing directories and files.
+- Utilizes a **composite design pattern**, treating the entire collection of objects similarly to individual objects within the collection.
+- The implementation prioritizes simplicity and efficiency using **objects** for representing directories and files.
 
 ![Flowchart Illustrating the File System Design](https://miro.medium.com/v2/resize:fit:828/format:webp/1*Urt2Xs4OwqJYxRx1CecKkQ.png)
 
@@ -92,12 +93,15 @@ Setup Instructions for Running a Python Script on Windows:
 
 1. **Insertions/Deletions:**
     - **Time Complexity:** O(1)
-    - **Explanation:** JavaScript objects typically have constant time complexity for lookup, insertion, and deletion operations.
+    - **Explanation:** Adding or removing an item from a Python dictionary typically has constant time complexity, as it involves hash table operations.
 
 2. **Path Manipulation:**
     - **Time Complexity:** O(N), where N is the length of the path being manipulated.
-    - **Explanation:** Path manipulation operations use string concatenation and regular expressions. The time complexity depends on the length of the paths being manipulated.
-
+    - **Explanation:** Path manipulation operations involve string concatenation and regular expressions, where the time complexity depends on the length of the paths being manipulated.
+      
 3. **Command Processing:**
     - **Time Complexity:** O(1) to O(N), depending on the specific operation and it can be O(log N) if we implement Binary Search.
-    - **Explanation:** Most operations involve dictionary lookups or manipulations, which are O(1). However, operations like listing directory contents may take O(N) time, where N is the size of the specific directory or file involved.
+    - **Explanation:** Most operations involve dictionary lookups or manipulations, which are typically O(1). However, operations like listing directory contents may take O(N) time, where N is the size of the specific directory or file involved.
+   
+**Overall:**
+The implementation demonstrates efficient time complexity for common file system operations, ensuring effective performance for typical use cases.
