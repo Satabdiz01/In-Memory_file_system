@@ -15,32 +15,20 @@ This project implements a basic in-memory file system in Python, providing funda
 ## Implementation Details
 
 ### File System Structure (Data Structure):
-- The core data structure is a Python dictionary (fs) representing the file system. It employs a hierarchical structure with directories and files, utilizing keys for names and values for nested objects.
-- Each directory is denoted by a dictionary with a 'type' property set to 'dir' and a 'content' property containing nested files and directories.
-- Files are similarly represented with a 'type' property set to 'file' and a 'content' property containing the file's data.
+- The core data structure is a Python dictionary (`fs`) representing the file system. It employs a hierarchical structure with directories and files, utilizing keys for names and values for nested objects.
+- Each directory is denoted by a dictionary with a `type` property set to `ir` and a `content` property containing nested files and directories.
+- Files are similarly represented with a `type` property set to `file` and a `content` property containing the file's data.
 
 ### File System Operations:
 - `mkdir`: Creates a new directory.
 - `cd`: Changes the current directory.
-  - Support navigating to the parent directory using `..`
-  - Moving to the root directory using `/`
-  - Navigating to a specified absolute path.
 - `ls`: Lists the contents of the current or specified directory.
-- `grep`: Searches for a specified pattern in a file (bonus functionality).
 - `cat`: Displays the contents of a file.
 - `touch`: Creates a new empty file.
 - `echo`: Writes text to a file.
 - `mv`: Moves a file or directory to another location.
 - `cp`: Copies a file or directory to another location.
 - `rm`: Removes a file or directory.
-
-### Design Decisions:
-
-- This code focuses on providing a basic understanding of file system operations in a **Python** environment.
-- Utilizes a **composite design pattern**, treating the entire collection of objects similarly to individual objects within the collection.
-- The implementation prioritizes simplicity and efficiency using **objects** for representing directories and files.
-
-![Flowchart Illustrating the File System Design](https://miro.medium.com/v2/resize:fit:828/format:webp/1*Urt2Xs4OwqJYxRx1CecKkQ.png)
 
 ## Setup Instructions:
 Setup Instructions for Running a Python Script on Windows:
